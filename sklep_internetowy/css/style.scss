@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+input {outline:none;}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto; /*сверху-снизу и селва справа*/
+    outline: 1px solid blue; /*позволяет увидеть границы*/
+}
+
+.header {
+    background-color: #222222;
+    color: #fff;
+    padding: 18px 0;
+}
+
+.logolink {
+    margin-right: 41px;
+}
+
+.buttom-header {
+    margin-right: 33px;
+}
+
+.headerwrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*main sections*/
+.intro {
+    background-color: #F1E4E6;
+    margin-bottom: 67px;
+}
+
+.introinside {
+    background-image: url("../img/introimg.png");
+    height: 764px;
+    background-repeat: no-repeat;
+    background-position: -228px bottom;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.intro-title {
+    color: #222222;
+    width: 410px;
+    border-left: 12px solid #F16D7F; /*линия возле текста*/
+    margin-right: 96px;
+    margin-bottom: 91px;
+    padding-left: 13px;
+}
+
+.intro-title-big {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.intro-title-small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.inro-title-pink {
+    color: #F16D7F;
+}
+/*КАТЕГОРИИ ТОВАРА*/
+.categories {
+   background-color:  #ffffff;
+   margin-bottom: 100px;
+}
+.categories-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     
+     /*gap: 20px; задает отступ между блоками, но не все браузеры поддерживают*/
+}
+
+.categories-item {
+    width: 360px;
+    height: 260px;
+    background-color: rgba(33, 22, 22, 0.7);
+    margin-bottom: 20px;
+    text-decoration: none; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.categories-item-pink {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.categories-item-acc {
+    width: 100%;
+    height: 180px;
+    background-image: url("../img/accesories.jpg");
+}
+
+.categories-item-women {
+    background-image: url("../img/for-women.jpg");
+}
+
+.categories-item-men {
+    background-image: url("../img/formen.jpg");
+}
+
+.categories-item-kids {
+    background-image: url("../img/forkids.jpg");
+}
+
+/*ТОВАРЫ*/
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 48px;
+}
+.products-title {
+    font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 36px;
+color: #222222;
+text-align: center;
+margin-bottom: 6px;
+}
+.products-description {
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #9F9F9F;
+text-align: center;
+margin-bottom: 48px;
+}
+.product-picture-center {
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product {
+    width: 360px;
+    background-color: #F8F8F8;
+    
+   
+}
+.product-picture {
+    padding-bottom:24px ;
+    height: 420px;
+
+    
+}
+.product-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000; 
+    padding-left: 17px ; 
+    padding-bottom: 13px;
+    padding-right: 28px;
+    
+}
+.product-text {
+    font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+
+color: #5D5D5D;
+padding-left: 17px ;
+padding-bottom: 18px;
+padding-right: 28px;
+}
+.product-priсe {
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+padding-left: 17px ;
+padding-bottom: 20px;
+
+color: #F16D7F;
+
+}
+ .product-link {
+    text-decoration: none; 
+    user-select: none;
+    border: 1px solid #FF6A6A;
+     
+     padding: 15px 39px ;
+     text-align: center;
+     color: #F26376;
+     display: block; 
+     text-align:center;
+     width: 150px;/*как обойтись без ширины*/
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+ .products {
+     margin-bottom: 105px;
+ }
+/*ПРЕИМУЩЕСТВА*/
+.benefits {
+    background-color: #222224;
+}
+.benefits-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+.benefit {
+    width: 360px;
+}
+.benefit-title {
+font-style: normal;
+font-weight: normal;
+font-size: 19.96px;
+line-height: 24px;
+color: #FBFBFB;
+text-align: center;
+padding-bottom: 16px;
+}
+.benefit-description {
+    font-style: normal;
+font-weight: 300;
+font-size: 13.972px;
+line-height: 17px;
+text-align: center;
+padding-left:15px ;
+padding-right: 15px;
+
+
+color: #FBFBFB;
+}
+.benefit-image {
+    padding-bottom : 19px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+}
+.benefit {
+    margin-top: 104px;
+   margin-bottom: 104px;
+}
+/*subscribe*/
+.over-lay {
+    background-color: rgba(244,244,244,0.7);
+}
+.subskribe-blok {
+    background-image: url(../img/subscribe\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    
+}
+.subskribe-wrap {
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.subscribe {
+    margin-top: 150px;
+    margin-bottom: 156px;
+    padding-right: 104px;
+}
+.title-subscribe {
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 37.7 px;
+text-align: center;
+color: #222224;
+padding-bottom: 26px;
+}
+.subscribe-title {
+    padding-bottom: 17px;
+}
+.subscribes-text {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30.1px;
+}
+.subscribe-info {
+    margin-top: 97px;
+    margin-bottom: 126px;
+    width: 360px;
+   
+}
+.contact-manager {
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-manager-description {
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #222224;
+}
+.subscribe-field {
+padding: 20px;
+padding-right: 80px ;
+background-color: #E1E1E1;
+border: none;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+
+}
+.subscribe-btn {
+    padding: 20px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+}
+.subscribe-field::placeholder {
+    color: #222224;
+    font-family: 'Lato', sans-serif;
+}
+/*end main sections*/
+.footer {
+    background-color: transparent;
+    background-color: #222224;
+    display: flex;
+    justify-content: space-between;
+
+}
+.rights-reserved {
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #FBFBFB;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.social-links {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.body-social-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32px;
+    height: 32px;
+    background-color:#FFFFFF;
+    margin-left: 7.29px ;
+   
+}
+.img-social {
+    display: block;
+    margin: auto;
+    
+   
+    
+}
